@@ -40,7 +40,7 @@ const SubscriberInfo = ({
 
   return (
     <div className=" rounded-xl my-2">
-    <NavLink to={`${_id}?q=${q}&p=${p}`} className={({ isActive, isPending }) => {
+    <NavLink to={`subscribers/${_id}?q=${q}&p=${p}`} className={({ isActive, isPending }) => {
     // <NavLink to={`${user._id}.?q=${q}&p=${p}`} className={({ isActive, isPending}) => {
       console.log(isActive, isPending)
       return ( 
