@@ -41,17 +41,17 @@ import Favorite, {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="subscribers"  element={<HomePage />} loader={homePageLoader} errorElement={<ErrorPage />} >
+      <Route path="/"  element={<HomePage />} loader={homePageLoader} errorElement={<ErrorPage />} >
         <Route index element={<Index />} />
         <Route
-          path="add"
+          path="subscribers/add"
           element={<CreateSubscriberPage />}
           loader={createSubscriberPageLoader}
           action={createSubscriberPageAction}
            errorElement={<ErrorPage />}
         />
         <Route
-          path=":id/edit"
+          path="subscribers/:id/edit"
           element={<EditSubscriberPage />}
           loader={editSubscriberPageLoader}
           action={editSubscriberPageAction}
@@ -59,7 +59,7 @@ const router = createBrowserRouter(
           // errorElement={<ErrorPage />}
         />
         <Route
-          path=":id"
+          path="subscribers/:id"
           
           element={<SubscriberDetailsPage />}
           loader={SubscriberDetailsPageLoader}
@@ -68,7 +68,7 @@ const router = createBrowserRouter(
           // errorElement={<ErrorPage />}
         />
         <Route
-          path=":id/destroy"
+          path="subscribers/:id/destroy"
           element={<Destroy />}
           action={DestroyAction}
            errorElement={<ErrorPage />}
@@ -76,7 +76,7 @@ const router = createBrowserRouter(
           // errorElement={<ErrorPage />}
         />
         <Route
-          path=":id/favorite"
+          path="subscribers/:id/favorite"
           element={<Favorite />}
           // action={FavoriteAction}
            errorElement={<ErrorPage />}
