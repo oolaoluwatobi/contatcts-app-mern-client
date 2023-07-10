@@ -41,7 +41,7 @@ import Favorite, {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="subscribers "  element={<HomePage />} loader={homePageLoader} errorElement={<ErrorPage />} >
+      <Route path="subscribers"  element={<HomePage />} loader={homePageLoader} errorElement={<ErrorPage />} >
         <Route index element={<Index />} />
         <Route
           path="add"
