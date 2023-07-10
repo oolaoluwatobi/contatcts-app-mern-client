@@ -8,7 +8,7 @@ export async function loader({ request, params }) {
     const p = new URL(request.url).searchParams.get("p") || '';
     const q = new URL(request.url).searchParams.get("q") || '';
   try {
-    const res = await api.get(`subscribers/${params?.id}/?q=${q}&p=${p}`, {
+    const res = await api.get(`${params?.id}/?q=${q}&p=${p}`, {
       id: `${params.id}`,
     });
 
@@ -34,7 +34,7 @@ export async function action({ request, params: { id } }) {
   console.log(newUser)
 
   try {
-    const res = await api.put(`subscribers/${id}`, newUser);
+    const res = await api.put(`${id}`, newUser);
     console.log(res.data, "favorite");
     const resData = res?.data;
     return { resData, newUser }, redirect(`./?q=${q}&p=${p}`);
