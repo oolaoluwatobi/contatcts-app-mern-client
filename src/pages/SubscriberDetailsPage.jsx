@@ -100,7 +100,7 @@ const SubscriberDetailsPage = () => {
                 <Form
                 className=''
                   method="post"
-                  action={`subscribers/destroy/?q=${q}&p=${p}`}
+                  action={`destroy/?q=${q}&p=${p}`}
                   onSubmit={(event) => {
                     if (
                       !confirm(
