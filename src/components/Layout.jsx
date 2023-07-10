@@ -11,7 +11,7 @@ const Layout = () => {
       <div>
         <Header />
         <main className="flex-grow mx-auto">
-          <Link to={"subscribers"}>
+          <Link to={"/subscribers"}>
             <h1 className="w-full text-4xl font-semibold my-5  ">
               Subscribers
             </h1>
