@@ -40,8 +40,8 @@ import Favorite, {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/subscribers" element={<Layout />}>
-      <Route path="."  element={<HomePage />} loader={homePageLoader} errorElement={<ErrorPage />} >
+    <Route path="/" element={<Layout />}>
+      <Route path="subscribers "  element={<HomePage />} loader={homePageLoader} errorElement={<ErrorPage />} >
         <Route index element={<Index />} />
         <Route
           path="add"
