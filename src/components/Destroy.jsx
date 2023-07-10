@@ -13,10 +13,10 @@ export async function action({ request, params }) {
     });
 
     console.log(res, res?.data, "15: Subs...");
-    return redirect(`/subscribers/?q=${q}&p=${p}`)
+    return redirect(`/?q=${q}&p=${p}`)
   } catch (error) {
     console.log(error.message);
-    return error, redirect('/subscribers')
+    return error, redirect('/')
   } 
 }
 
