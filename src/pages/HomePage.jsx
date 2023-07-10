@@ -64,7 +64,7 @@ const HomePage = () => {
       <div className="bg-orange-100 flex p">
 
         <div className="max-w-md  bg-slate-100 px-10">
-          <Link to={"."}>
+          <Link to={"/subscribers"}>
             <h1 className="w-full text-4xl font-semibold my-5  ">
               Subscribers
             </h1>
