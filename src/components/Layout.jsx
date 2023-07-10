@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -11,6 +11,11 @@ const Layout = () => {
       <div>
         <Header />
         <main className="flex-grow mx-auto">
+          <Link to={"subscribers"}>
+            <h1 className="w-full text-4xl font-semibold my-5  ">
+              Subscribers
+            </h1>
+          </Link>
           <Outlet />
         </main>
         <div className="mb-auto mx-auto">
