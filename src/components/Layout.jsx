@@ -11,11 +11,11 @@ const Layout = () => {
       <div>
         <Header />
         <main className="flex-grow mx-auto">
-          <Link to={"subscribers"}>
+          {/* <Link to={"subscribers"}>
             <h1 className="w-full text-4xl font-semibold my-5  ">
               Subscribers test
             </h1>
-          </Link>
+          </Link> */}
           <Outlet />
         </main>
         <div className="mb-auto mx-auto">
