@@ -64,7 +64,7 @@ const HomePage = () => {
       <div className="bg-orange-100 flex p">
 
         <div className="max-w-md  bg-slate-100 px-10">
-          <Link to={"."}>
+          <Link to={"/"}>
             <h1 className="w-full text-4xl font-semibold my-5  ">
               Subscribers
             </h1>
@@ -95,7 +95,7 @@ const HomePage = () => {
                 />
             </Form>
             {/* <AiOutlineLoading size={20} className="hover:rotate-180" /> */}
-            <Link to={`subscribers/add?q=${q}&p=${p}`} className="ml-auto">
+            <Link to={`/subscribers/add?q=${q}&p=${p}`} className="ml-auto">
               <button className="bg-slate-300 hover:bg-slate-400 px-5 py-2 ml-5 rounded-md text-slate-600 hover:text-slate-700  font-medium text-md">
                 New
               </button>
