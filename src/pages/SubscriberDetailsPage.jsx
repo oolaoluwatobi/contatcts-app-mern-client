@@ -92,7 +92,7 @@ const SubscriberDetailsPage = () => {
               </div>
 
               <div className='flex'>
-                <Link to={`edit?q=${q}&p=${p}`} >
+                <Link to={`/subscribers/${_id}/edit?q=${q}&p=${p}`} >
                   <button className="bg-slate-300 hover:bg-slate-00 mt3 px-6 py-2 rounded-md text-slate-500 font-medium  hover:scale-110 duration-500">
                   Edit
                   </button>
@@ -100,7 +100,7 @@ const SubscriberDetailsPage = () => {
                 <Form
                 className=''
                   method="post"
-                  action={`destroy/?q=${q}&p=${p}`}
+                  action={`/subscribers/${_id}/destroy/?q=${q}&p=${p}`}
                   onSubmit={(event) => {
                     if (
                       !confirm(
