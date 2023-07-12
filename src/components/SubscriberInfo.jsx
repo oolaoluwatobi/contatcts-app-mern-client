@@ -7,8 +7,6 @@ import {
   useLocation,
   NavLink,
 } from "react-router-dom";
-import userImage from "../images/userImage.png";
-import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
 
 import api from "../api/users";
 
