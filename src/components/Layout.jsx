@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -7,10 +7,10 @@ import Footer from "./Footer";
 const Layout = () => {
 
   return (
-    <div className="bg-red-100 min-h-screen flex">
+    <div className="bg-red100 min-h-screen w-full fle">
       <div>
         <Header />
-        <main className="flex-grow mx-auto">
+        <main className="">
           {/* <Link to={"subscribers"}>
             <h1 className="w-full text-4xl font-semibold my-5  ">
               Subscribers test
@@ -18,9 +18,9 @@ const Layout = () => {
           </Link> */}
           <Outlet />
         </main>
-        <div className="mb-auto mx-auto">
+        {/* <div className="mbauto mxauto">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </div>
   );

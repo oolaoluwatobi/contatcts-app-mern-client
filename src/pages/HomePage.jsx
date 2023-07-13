@@ -51,7 +51,7 @@ const HomePage = () => {
       }
 
       if (value > 0 && change === 'dec') {
-          value--
+          value--  
           prevParams.set(key, value);
       }
       // console.log(change)
@@ -60,12 +60,12 @@ const HomePage = () => {
   }
   
   return (
-    <div className="w-full bg-slate100">
-      <div className="bg-orange-100 flex p">
+    <div className="w-full bg-slate-100 h-screen flex ">
+      <div className="bg-orange-100 md:flex mx-auto itemscenter justifycenter">
 
-        <div className="max-w-md  bg-slate-100 px-10">
+        <div className="w-full   bg-slate-100 px-10">
           <Link to={"/"}>
-            <h1 className="w-full text-4xl font-semibold my-5  ">
+            <h1 className="w-full text-4xl font-semibold py-5  ">
               Subscribers
             </h1>
           </Link>
@@ -107,7 +107,7 @@ const HomePage = () => {
           />
 
           
-          <div className="max-w-4xl flex justify-between px5 my-5">
+          <div className="max-w-4xl flex justify-between px5 py-5">
             <button onClick={() => handlePage('p', page, 'dec')}  className="bg-slate-300 hover:bg-slate-400 px-2 py-2 rounded-md text-slate-600 hover:text-slate-700 font-medium text-xs">
               Previous Page
             </button>
@@ -118,7 +118,9 @@ const HomePage = () => {
           </div>
         </div>
 
+      <div className="w-[768px] h-[568px] bg-green-100 md:h-screen">
         <Outlet />
+      </div>          
 
       </div>
     </div>

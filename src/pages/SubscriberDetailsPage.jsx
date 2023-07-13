@@ -56,7 +56,7 @@ const SubscriberDetailsPage = () => {
   
   return (
     <div className={
-      navigation.state === "loading" ? 'hover:bg-slate-200 px-10 pt-20 max-w-2xl bg-slate-100 rounded-md blur' : 'hover:bg-slate-200 px-10 pt-20 max-w-2xl bg-slate-100 rounded-md '
+      navigation.state === "loading" ? 'hover:bg-slate-200 px-10 pt-20 w-full bg-slate-100 rounded-md blur h-full md:h-screen' : 'hover:bg-slate-200 px-10 pt-20 w-full bg-slate-100 rounded-md h-full md:h-screen'
     }>
       {navigation.state === "loading" ? <div className='absolute'>
           <div className=" flex justify-center items-center absolute top-3 left-3">
@@ -66,8 +66,8 @@ const SubscriberDetailsPage = () => {
         : 
         null
       }
-      <div className=" w-full ">
-          <div className="w-[576px] flex  px5 mb-5">
+      <div className=" w-full md:h-">
+          <div className="w-[768px] flex  px5 pb-40">
             <div className="">
               <img
                 src={imageUrl}
@@ -117,7 +117,7 @@ const SubscriberDetailsPage = () => {
               </div>
             </div>
           </div>
-          <hr />
+          {/* <hr /> */}
         </div>
     </div>
   )

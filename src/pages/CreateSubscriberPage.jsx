@@ -51,33 +51,15 @@ const CreateSubscriberPage = () => {
   const errorMessage = error?.response?.data?.message;
 
   const navigation = useNavigation();
-  // console.log(navigation)
-  // console.log(error)
 
   const loaderData = useLoaderData();
   console.log(loaderData, actionData);
   console.log(message, error);
   console.log(newUser, !newUser, !null, (undefined || null));
-  // console.log(newUser, error?.response?.data?.message);
-
-  // const inputElements = actionData.map(data, i => {
-  //   return (
-  //     <div key={i+1}>
-  //     <input
-  //       className="indent-2 border border-[#d1d5db] rounded-t p-2 placeholder:text-[#4d4d4d]"
-  //       type="email"
-  //       name="email"
-  //       placeholder={data.email}
-  //     />
-  //     {data?.email ? <small>{data?.email}</small> : <small className="text-red-500">{data?.email} is required</small>}
-
-  //     </div>
-  //   )
-  // })
 
   return (
-    <div className=" bg-slate-50 rounded-md max-w-4xl">
-      <div className="mt-12">
+    <div className=" bg-slate-50 rounded-md w-full h-full md:h-screen">
+      <div className="pt-12">
         {/* <h1 className="text-center font-bold text-3xl">Add a Subscriber</h1> */}
         {message && !error && (
           <h1 className="text-center pt-4 font-semibold text-[#cc0000] text-2xl">
@@ -134,7 +116,7 @@ const CreateSubscriberPage = () => {
           </div>
 
           <label className="flex bg-slate100 w-full">
-            <h3 className="mr-4 mt-7 text-sm font-medium">Alias</h3>
+            <h3 className="-mr-4 mt-7 text-sm font-medium">Alias</h3>
             <div className="flex flex-col ml-auto w-96">
               <div className="ml16">
 

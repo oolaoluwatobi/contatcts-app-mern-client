@@ -72,8 +72,8 @@ const EditSubscriberPage = () => {
   console.log(data, resData, newUser);
 
   return (
-    <div className=" bg-slate-50 rounded-md max-w-4xl">
-      <div className="mt-12 mxauto bg-lime100 w-full">
+    <div className=" bg-slate-50 rounded-md h-full md:h-screen">
+      <div className="pt-12 mxauto bg-lime100 w-full">
         {/* <h1 className="text-center font-bold text-3xl">Add a Subscriber</h1> */}
         {message && !error && (
           <h1 className="text-center pt-4 font-semibold text-[#cc0000] text-2xl">
@@ -123,7 +123,7 @@ const EditSubscriberPage = () => {
           </label>
 
           <label className="flex bg-slate100 w-full">
-            <h3 className="mr-4 mt-7 text-sm font-medium">Alias</h3>
+            <h3 className="mr- mt-7 text-sm font-medium">Alias</h3>
             <div className="flex flex-col ml-auto w-96">
               <div className="ml16">
 
