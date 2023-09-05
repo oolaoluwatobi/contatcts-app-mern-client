@@ -31,7 +31,7 @@ The React contacts app is designed to manage a list of contacts using modern Rea
 
 ## Installation
 
-Follow these steps to set up and run the backend locally:
+Follow these steps to set up and run the app locally:
 
 1. Clone the repository:
 
